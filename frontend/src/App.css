@@ -1,38 +1,157 @@
-.App {
+/* App.css */
+
+.container {
+  background-color: #E1F0DA;
+}
+
+html {
+  background-color: #E1F0DA;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav button:hover {
+  background-color: #ddd;
+}
+
+.empty-message {
   text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #888;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 80%;
+  margin: auto;
+  max-height: 70vh;
+  overflow-y: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.product-item {
+  border: 1px solid #99BC85;
+  padding: 10px;
+  height: 150px;
+  background-color: #D4E7C5;
+  text-align: center;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-item input[type="checkbox"] {
+  margin-right: 170px;
+  accent-color: red;
+  transform: scale(1.5);
+}
+
+.product-item.red-border {
+  border-top: 2px solid red;
+  background-color: #99BC85;
+}
+
+/*#product_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}*/
+
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 150px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 30%;
+}
+
+.form-group label {
+  width: 100px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.form-group input,
+.form-group select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form .description {
+  font-size: 0.8em;
+  color: #666;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input, select {
+  margin-bottom: 10px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #BFD8AF;
+  border-bottom: 1px solid #99BC85;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.footer {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-top: 1px solid #99BC85;
+  margin-top: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-weight: 400;
 }
